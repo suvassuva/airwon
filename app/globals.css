@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2F3C8F;
+  --color-accent: #F97316;
+  --color-background: #F8FAFC;
+  --color-text-navy: #0F172A;
+  --color-border: #E2E8F0;
+  --color-ring: #2F3C8F;
+  
+  --radius-2xl: 1.5rem;
+  
+  --font-inter: var(--font-inter);
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+  --primary: #2F3C8F;
+  --accent: #F97316;
+  --border: #E2E8F0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  margin: 0;
+}
+
+/* Base styles without @apply to avoid build issues */
+* {
+  border-color: var(--border);
+}
+
