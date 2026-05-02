@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from '@/components/ui/SocialIcons';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -85,19 +86,54 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* WhatsApp CTA */}
-            <div className="bg-primary rounded-3xl p-8 text-white flex items-center justify-between shadow-xl shadow-primary/20">
-              <div className="max-w-[200px]">
-                <h4 className="font-bold text-lg mb-2">Need a quick answer?</h4>
-                <p className="text-sm text-white/70">Chat with us on WhatsApp for instant support.</p>
+            {/* WhatsApp & Socials */}
+            <div className="space-y-6">
+              <div className="bg-primary rounded-3xl p-8 text-white flex items-center justify-between shadow-xl shadow-primary/20">
+                <div className="max-w-[200px]">
+                  <h4 className="font-bold text-lg mb-2">Need a quick answer?</h4>
+                  <p className="text-sm text-white/70">Chat with us on WhatsApp for instant support.</p>
+                </div>
+                <a 
+                  href="https://wa.me/917975538933" 
+                  target="_blank"
+                  className="bg-accent hover:bg-accent/90 text-white p-4 rounded-2xl transition-all"
+                >
+                  <MessageCircle size={32} />
+                </a>
               </div>
-              <a 
-                href="https://wa.me/917975538933" 
-                target="_blank"
-                className="bg-accent hover:bg-accent/90 text-white p-4 rounded-2xl transition-all"
-              >
-                <MessageCircle size={32} />
-              </a>
+
+              <div className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center gap-6 shadow-sm">
+                <h4 className="font-bold text-primary text-lg">Follow Our Updates</h4>
+                <div className="flex gap-6">
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=61572134004179" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 rounded-full bg-slate-50 flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all shadow-sm border border-slate-100"
+                    aria-label="Follow us on Facebook"
+                  >
+                    <FacebookIcon size={24} />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/airwinindia06/?ref=xav_igxfb_comet_ig_bookmark_mega_menu_launch" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 rounded-full bg-slate-50 flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all shadow-sm border border-slate-100"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <InstagramIcon size={24} />
+                  </a>
+                  <a 
+                    href="https://www.youtube.com/@AirwinIndia" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 rounded-full bg-slate-50 flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all shadow-sm border border-slate-100"
+                    aria-label="Follow us on YouTube"
+                  >
+                    <YoutubeIcon size={24} />
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
 

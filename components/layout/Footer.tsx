@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { FacebookIcon, InstagramIcon, XIcon } from '@/components/ui/SocialIcons';
+import { FacebookIcon, InstagramIcon, YoutubeIcon, XIcon } from '@/components/ui/SocialIcons';
 import BrandLogo from '@/components/ui/BrandLogo';
 
 const Footer = () => {
@@ -16,9 +16,33 @@ const Footer = () => {
               Your trusted partner for hassle-free travel services, visa processing, and air ticketing across India and beyond.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-accent transition-colors"><FacebookIcon size={20} /></a>
-              <a href="#" className="hover:text-accent transition-colors"><InstagramIcon size={20} /></a>
-              <a href="#" className="hover:text-accent transition-colors"><XIcon size={20} /></a>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61572134004179" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-accent transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <FacebookIcon size={20} />
+              </a>
+              <a 
+                href="https://www.instagram.com/airwinindia06/?ref=xav_igxfb_comet_ig_bookmark_mega_menu_launch" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-accent transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <InstagramIcon size={20} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@AirwinIndia" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-accent transition-colors"
+                aria-label="Follow us on YouTube"
+              >
+                <YoutubeIcon size={20} />
+              </a>
             </div>
           </div>
 
