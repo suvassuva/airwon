@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #2F3C8F;
-  --color-accent: #F97316;
+  --color-primary: #0D82AE;
+  --color-accent: #F18818;
   --color-background: #F8FAFC;
   --color-text-navy: #0F172A;
   --color-border: #E2E8F0;
-  --color-ring: #2F3C8F;
+  --color-ring: #0D82AE;
   
   --radius-2xl: 1.5rem;
   
@@ -16,8 +16,8 @@
 :root {
   --background: #F8FAFC;
   --foreground: #0F172A;
-  --primary: #2F3C8F;
-  --accent: #F97316;
+  --primary: #0D82AE;
+  --accent: #F18818;
   --border: #E2E8F0;
 }
 

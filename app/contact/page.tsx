@@ -4,12 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from '@/components/ui/SocialIcons';
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
-};
+import Image from 'next/image';
 
 export default function ContactPage() {
   return (
@@ -17,10 +12,11 @@ export default function ContactPage() {
       {/* Hero Section */}
       <div className="relative pt-40 pb-24 mb-16 overflow-hidden bg-primary">
         <div className="absolute inset-0 z-0">
-          <img 
+          <Image 
             src="/images/ticket.png" 
             alt="Travel Support" 
-            className="w-full h-full object-cover opacity-30"
+            fill
+            className="object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent" />
         </div>
@@ -79,8 +75,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-primary text-xl mb-1">Office Location</h4>
-                    <p className="text-slate-600">123 Travel Hub, Residency Road</p>
-                    <p className="text-slate-600">Bangalore, Karnataka, India 560001</p>
+                    <p className="text-slate-600">#338, 2nd Cross, Hennur Cross,</p>
+                    <p className="text-slate-600">Chelekere Main Road, Kalyannagar, Bangalore - 560043</p>
                   </div>
                 </div>
               </div>

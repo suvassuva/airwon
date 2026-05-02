@@ -244,7 +244,7 @@ export default function Home() {
                 variants={fadeInUp}
                 className="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between h-full"
               >
-                <p className="text-slate-600 italic mb-6 leading-relaxed">"{item.content}"</p>
+                <p className="text-slate-600 italic mb-6 leading-relaxed">&quot;{item.content}&quot;</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">
                     {item.name.charAt(0)}
@@ -334,7 +334,7 @@ export default function Home() {
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Get your visa processed today</h2>
               <p className="text-white/80 text-lg mb-10 leading-relaxed">
-                Don't let paperwork stop your dreams. Contact our experts and start your application journey with confidence.
+                Don&apos;t let paperwork stop your dreams. Contact our experts and start your application journey with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 

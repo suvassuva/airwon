@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { FacebookIcon, InstagramIcon, YoutubeIcon, XIcon } from '@/components/ui/SocialIcons';
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from '@/components/ui/SocialIcons';
 import BrandLogo from '@/components/ui/BrandLogo';
 
 const Footer = () => {
@@ -74,7 +74,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-4 text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-accent shrink-0" />
-                <span>123 Travel Hub, Bangalore, India 560001</span>
+                <span>#338, 2nd Cross, Hennur Cross, Chelekere Main Road, Kalyannagar, Bangalore - 560043</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-accent shrink-0" />

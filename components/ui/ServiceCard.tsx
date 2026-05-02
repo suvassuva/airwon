@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FileText, Plane, Palmtree, ArrowRight } from 'lucide-react';
 import { Service } from '@/data/services';
+import Image from 'next/image';
 
 const iconMap = {
   Passport: FileText,
@@ -26,10 +27,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
       className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 h-full flex flex-col overflow-hidden"
     >
       <div className="relative h-48 overflow-hidden">
-        <img 
+        <Image 
           src={service.image} 
           alt={service.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>

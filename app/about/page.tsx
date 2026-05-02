@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Eye, Award, Users } from 'lucide-react';
+import { Users, Award, Target, Eye } from 'lucide-react';
+import Image from 'next/image';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -10,8 +11,6 @@ const fadeInUp = {
   viewport: { once: true },
   transition: { duration: 0.6 }
 };
-
-import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -53,7 +52,7 @@ export default function AboutPage() {
             <motion.div {...fadeInUp}>
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Established with a vision to redefine travel services, Airwon India has grown from a boutique agency to a trusted partner for thousands of travelers. We understood early on that the biggest barrier to international travel wasn't just the distance, but the daunting paperwork.
+                Established with a vision to redefine travel services, Airwon India has grown from a boutique agency to a trusted partner for thousands of travelers. We understood early on that the biggest barrier to international travel wasn&apos;t just the distance, but the daunting paperwork.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Today, we pride ourselves on our deep expertise in visa processing, passport services, and travel logistics, serving as a reliable bridge between our clients and their global destinations.
@@ -65,10 +64,11 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl"
             >
-              <img 
+              <Image 
                 src="/images/consultant.png" 
                 alt="Our Expert Consultant" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </motion.div>
           </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-white/70 leading-relaxed text-lg">
-                To provide world-class travel documentation services through technological innovation and personalized expert guidance, ensuring every client's journey begins with confidence.
+                To provide world-class travel documentation services through technological innovation and personalized expert guidance, ensuring every client&apos;s journey begins with confidence.
               </p>
             </motion.div>
 
