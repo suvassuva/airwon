@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/office-bg.png" 
-            alt="Airwon Office" 
+            alt="Airwin Office" 
             fill
             className="object-cover opacity-40"
             sizes="100vw"
@@ -39,7 +39,7 @@ export default function AboutPage() {
               We Simplify Global <span className="text-accent">Mobility</span>
             </h1>
             <p className="text-xl text-white/80 leading-relaxed">
-              Airwon India was founded with a single mission: to make international travel and documentation accessible, transparent, and stress-free for everyone.
+              Airwin India was founded with a single mission: to make international travel and documentation accessible, transparent, and stress-free for everyone.
             </p>
           </motion.div>
         </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <motion.div {...fadeInUp}>
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Established with a vision to redefine travel services, Airwon India has grown from a boutique agency to a trusted partner for thousands of travelers. We understood early on that the biggest barrier to international travel wasn&apos;t just the distance, but the daunting paperwork.
+                Established with a vision to redefine travel services, Airwin India has grown from a boutique agency to a trusted partner for thousands of travelers. We understood early on that the biggest barrier to international travel wasn&apos;t just the distance, but the daunting paperwork.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Today, we pride ourselves on our deep expertise in visa processing, passport services, and travel logistics, serving as a reliable bridge between our clients and their global destinations.

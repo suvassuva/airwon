@@ -45,7 +45,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent z-10" />
           <Image
             src="/images/hero-bg.png"
-            alt="Airwon India Travel"
+            alt="Airwin India Travel"
             fill
             className="object-cover object-center"
             priority
@@ -126,7 +126,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Why ChooseAirwin India?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Why Choose Airwin India?</h2>
               <p className="text-slate-600 mb-10 leading-relaxed">
                 We combine years of industry expertise with a customer-first approach to provide travel services that are reliable, fast, and transparent.
               </p>
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/10 aspect-video lg:aspect-[4/3]">
                 <Image
                   src="/images/office.png"
-                  alt="Airwon India Office"
+                  alt="Airwin India Office"
                   fill
                   className="object-cover"
                 />

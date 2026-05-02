@@ -63,7 +63,7 @@ export const services: Service[] = [
     slug: "air-ticket-booking",
     title: "Air Ticket Booking",
     shortDescription: "Domestic and international flight bookings at competitive rates.",
-    description: "Book your domestic and international flights with Airwon India for the best deals. We provide real-time pricing, multiple airline options, and flexible cancellation policies to make your travel planning smooth and affordable.",
+    description: "Book your domestic and international flights with Airwin India for the best deals. We provide real-time pricing, multiple airline options, and flexible cancellation policies to make your travel planning smooth and affordable.",
     icon: "Plane",
     image: "/images/ticket-bg.png",
     documents: [

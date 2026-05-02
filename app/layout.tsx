@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Airwon India | Passport, Visa & Air Ticket Made Easy",
+  title: "Airwin India | Passport, Visa & Air Ticket Made Easy",
   description: "Professional travel and visa services including Passport assistance, Visa processing, Air Ticket booking, and Holiday packages.",
 };
 

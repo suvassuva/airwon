@@ -82,14 +82,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-accent shrink-0" />
-                <span>info@airwonindia.com</span>
+                <span>info@airwinindia.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
-          <p>© {new Date().getFullYear()}Airwin India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Airwin India. All rights reserved.</p>
         </div>
       </div>
     </footer>
