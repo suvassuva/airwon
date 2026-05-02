@@ -64,8 +64,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-primary text-xl mb-1">Email</h4>
-                    <p className="text-slate-600">info@airwinindia.com</p>
-                    <p className="text-slate-600">support@airwinindia.com</p>
+                    <p className="text-slate-600">airwinindia06@gmail.com</p>
                   </div>
                 </div>
 
