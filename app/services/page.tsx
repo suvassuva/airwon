@@ -11,17 +11,22 @@ const fadeInUp = {
   transition: { duration: 0.5 }
 };
 
+import Image from 'next/image';
+
 export default function ServicesPage() {
   return (
     <div className="pb-24 min-h-screen">
       <div className="relative pt-40 pb-24 mb-16 overflow-hidden bg-primary">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/collage.png" 
+          <Image 
+            src="/images/hero-bg.png" 
             alt="World Destinations" 
-            className="w-full h-full object-cover opacity-40 scale-105"
+            fill
+            className="object-cover opacity-40 scale-105"
+            sizes="100vw"
+            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">

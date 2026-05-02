@@ -11,18 +11,23 @@ const fadeInUp = {
   transition: { duration: 0.6 }
 };
 
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div className="pt-24 min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-40 pb-24 mb-16 overflow-hidden bg-primary">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/office.png" 
+          <Image 
+            src="/images/office-bg.png" 
             alt="Airwon Office" 
-            className="w-full h-full object-cover opacity-30"
+            fill
+            className="object-cover opacity-40"
+            sizes="100vw"
+            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
