@@ -16,28 +16,28 @@ const Footer = () => {
               Your trusted partner for hassle-free travel services, visa processing, and air ticketing across India and beyond.
             </p>
             <div className="flex items-center gap-4">
-              <a 
-                href="https://www.facebook.com/profile.php?id=61572134004179" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61572134004179"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Follow us on Facebook"
               >
                 <FacebookIcon size={20} />
               </a>
-              <a 
-                href="https://www.instagram.com/airwinindia06/?ref=xav_igxfb_comet_ig_bookmark_mega_menu_launch" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.instagram.com/airwinindia06/?ref=xav_igxfb_comet_ig_bookmark_mega_menu_launch"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <InstagramIcon size={20} />
               </a>
-              <a 
-                href="https://www.youtube.com/@AirwinIndia" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.youtube.com/@AirwinIndia"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
                 aria-label="Follow us on YouTube"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
-          <p>© {new Date().getFullYear()} Airwon India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}Airwin India. All rights reserved.</p>
         </div>
       </div>
     </footer>

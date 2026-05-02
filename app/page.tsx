@@ -4,11 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { 
-  ShieldCheck, 
-  Zap, 
-  Clock, 
-  CheckCircle2, 
+import {
+  ShieldCheck,
+  Zap,
+  Clock,
+  CheckCircle2,
   MessageCircle,
   ArrowRight,
   FileText,
@@ -43,10 +43,10 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent z-10" />
-          <Image 
-            src="/images/hero-bg.png" 
-            alt="Airwon India Travel" 
-            fill 
+          <Image
+            src="/images/hero-bg.png"
+            alt="Airwon India Travel"
+            fill
             className="object-cover object-center"
             priority
           />
@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-20 text-white">
           <div className="max-w-3xl text-center md:text-left mx-auto md:mx-0">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -63,7 +63,7 @@ export default function Home() {
               Passport | Visa | <br className="hidden md:block" />
               <span className="text-accent">Air Ticket</span> Made Easy
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -71,20 +71,20 @@ export default function Home() {
             >
               Your professional partner for seamless travel documentation and global mobility. We handle the complexity, you enjoy the journey.
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             >
-              <Link 
-                href="/services" 
+              <Link
+                href="/services"
                 className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-accent/40 flex items-center justify-center gap-2"
               >
                 Apply Now <ArrowRight size={20} />
               </Link>
-              <Link 
-                href="https://wa.me/917975538933" 
+              <Link
+                href="https://wa.me/917975538933"
                 className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
               >
                 <MessageCircle size={22} /> WhatsApp
@@ -97,7 +97,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <motion.div 
+          <motion.div
             {...fadeInUp}
             className="text-center max-w-2xl mx-auto mb-16"
           >
@@ -105,7 +105,7 @@ export default function Home() {
             <p className="text-slate-600">Explore our comprehensive range of travel and documentation services tailored to your needs.</p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -126,11 +126,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Why Choose Airwon India?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Why ChooseAirwin India?</h2>
               <p className="text-slate-600 mb-10 leading-relaxed">
                 We combine years of industry expertise with a customer-first approach to provide travel services that are reliable, fast, and transparent.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   { icon: Zap, title: "Fast Processing", desc: "Quick turnaround times for all applications." },
@@ -151,16 +151,16 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               className="relative"
             >
               <div className="aspect-video lg:aspect-square rounded-3xl bg-primary/5 overflow-hidden relative">
-                <Image 
-                  src="/images/holiday-bg.png" 
-                  alt="Premium Travel Services" 
+                <Image
+                  src="/images/holiday-bg.png"
+                  alt="Premium Travel Services"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -193,14 +193,14 @@ export default function Home() {
           <div className="relative">
             {/* Connector Line (Desktop) */}
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-slate-200 -translate-y-1/2 z-0" />
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
               {[
                 { step: "01", icon: FileText, title: "Submit Documents", desc: "Share your required documents with our experts for review." },
                 { step: "02", icon: UserCheck, title: "Verification", desc: "We handle the rigorous verification and application process." },
                 { step: "03", icon: CheckCircle, title: "Approval", desc: "Receive your processed documents and get ready to fly!" }
               ].map((item, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -231,7 +231,7 @@ export default function Home() {
             <p className="text-slate-600">Trusted by travelers for our dedicated service and expert guidance.</p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -239,7 +239,7 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {testimonials.map((item) => (
-              <motion.div 
+              <motion.div
                 key={item.id}
                 variants={fadeInUp}
                 className="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between h-full"
@@ -264,23 +264,23 @@ export default function Home() {
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="order-2 lg:order-1"
             >
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/10 aspect-video lg:aspect-[4/3]">
-                <Image 
-                  src="/images/office.png" 
-                  alt="Airwon India Office" 
-                  fill 
+                <Image
+                  src="/images/office.png"
+                  alt="Airwon India Office"
+                  fill
                   className="object-cover"
                 />
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -318,7 +318,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="py-20">
         <div className="container mx-auto px-4 md:px-6">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -330,21 +330,21 @@ export default function Home() {
                 <circle cx="90" cy="90" r="50" />
               </svg>
             </div>
-            
+
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Get your visa processed today</h2>
               <p className="text-white/80 text-lg mb-10 leading-relaxed">
                 Don&apos;t let paperwork stop your dreams. Contact our experts and start your application journey with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className="bg-white text-accent hover:bg-slate-100 px-10 py-4 rounded-full font-bold text-lg transition-all"
                 >
                   Contact Us
                 </Link>
-                <Link 
-                  href="https://wa.me/917975538933" 
+                <Link
+                  href="https://wa.me/917975538933"
                   className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
                 >
                   <MessageCircle size={22} /> WhatsApp Support
